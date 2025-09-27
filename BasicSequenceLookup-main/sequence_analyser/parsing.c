@@ -1,8 +1,8 @@
 #include "seq_lib.h"
 
-long long ft_strlen(char *sequence)
+long long int ft_strlen(char *sequence)
 {
-    long long i;
+    long long int i;
 
     i = 0;
     while(sequence[i])

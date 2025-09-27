@@ -1,16 +1,16 @@
 #include "seq_lib.h"
 
-void search_for_sequence_A(char *sequence, char *parent)
+void search_for_sequence_A(char *parent)
 {
         long long i;
         int flag;
         long long j;
-
-        j     = 0;
+        char *sequence = NULL;
+        j = 0;
         flag = 0;
         i = 0;
         printf("Insert the sequence you are looking for\n");
-        scanf("%s", sequence);
+        scanf("%ms", &sequence);
         while(parent[j] != '\0' && flag != 1)
         {
                 i = 0;
@@ -27,5 +27,5 @@ void search_for_sequence_A(char *sequence, char *parent)
                 j++;
         }
         if(flag != 1)
-                printf("Sequence found at localisation %li\n",j);
+                printf("Sequence found at localisation %lli\n",j);
 }

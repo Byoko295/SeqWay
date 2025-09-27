@@ -7,7 +7,7 @@ SRC = main.c\
 	
 OBJ = $(SRC:.c=.o)
 CC = cc
-CFLAGS = -Wall -Wextra -Werror -g3
+CFLAGS = -Wall -Wextra -Werror 
 
 %.o: %.c $(DEPS)
 	$(CC) $(CFLAGS) -c $< -o $@

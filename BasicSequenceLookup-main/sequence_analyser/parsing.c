@@ -17,7 +17,7 @@ bool is_base(char base)
         return(0);
 }
 
-void sequence_checker(char *sequence)
+void DNA_sequence_checker(char *sequence)
 {
     int i;
     long long seq_len;

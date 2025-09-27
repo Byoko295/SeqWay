@@ -2,8 +2,9 @@ NAME = seq_analyser
 
 SRC = main.c\
 		parsing.c\
-		seq_composition.c\
-		seq_finder.c
+		DNA_seq_composition.c\
+		DNA_seq_finder_A.c\
+		DNA_utils_seq_finder.c
 	
 OBJ = $(SRC:.c=.o)
 CC = cc

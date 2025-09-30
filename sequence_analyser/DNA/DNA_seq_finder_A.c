@@ -23,7 +23,7 @@ void DNA_search_for_sequence_A(char *parent)
         long long j = 0;
         char *sequence = NULL;
 
-        printf("Insert the sequence you are looking for\n");
+        printf("Insert target sequence you are looking for\n");
         scanf("%ms", &sequence);
         while(parent[j] != '\0')
         {

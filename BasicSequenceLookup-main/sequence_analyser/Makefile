@@ -1,10 +1,22 @@
 NAME = seq_analyser
 
 SRC = main.c\
+		main_menu.c\
 		parsing.c\
-		DNA_seq_composition.c\
-		DNA_seq_finder_A.c\
-		DNA_utils_seq_finder.c
+		displayers.c\
+		DNA/DNA_seq_composition.c\
+		DNA/DNA_seq_finder_A.c\
+		DNA/DNA_seq_finder_A_all.c\
+		DNA/DNA_seq_finder_Humming.c\
+		DNA/DNA_seq_finder_Humming_all.c\
+		DNA/DNA_utils.c\
+		PROT/PROT_seq_composition.c\
+		PROT/PROT_seq_finder_A.c\
+		PROT/PROT_seq_finder_A_all.c\
+		PROT/PROT_seq_finder_Humming.c\
+		PROT/PROT_seq_finder_Humming_all.c\
+		PROT/PROT_utils.c\
+
 	
 OBJ = $(SRC:.c=.o)
 CC = cc

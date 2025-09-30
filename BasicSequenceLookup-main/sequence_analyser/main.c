@@ -7,9 +7,9 @@ int main(int argc, char **argv)
         printf("Argument error");
         return(0);
     }
-    DNA_sequence_checker(argv[1]);
-    DNA_base_number_and_ratios(argv[1]);
-    DNA_search_for_sequence_A_all(argv[1]);
-   //sequence_finder(argv[1]);
-    return(0);
+    while(1)
+    {
+    main_menu();
+    }
+   return(0);
 }

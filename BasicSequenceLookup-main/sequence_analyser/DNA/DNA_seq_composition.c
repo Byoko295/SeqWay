@@ -1,4 +1,4 @@
-#include "seq_lib.h"
+#include "../seq_lib.h"
 
 void DNA_base_number_and_ratios(char *sequence)
 {

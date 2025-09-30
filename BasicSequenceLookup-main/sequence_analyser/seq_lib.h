@@ -14,4 +14,5 @@ void DNA_base_number_and_ratios(char *sequence);
 void DNA_search_for_sequence_A(char *parent);
 void DNA_search_for_sequence_A_all(char *parent);
 void print_ll_array(long long *f_array);
+void main_menu(void);
 #endif

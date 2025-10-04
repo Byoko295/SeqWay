@@ -1,6 +1,6 @@
 #include "../seq_lib.h"
 
-void DNA_base_number_and_ratios(char *sequence)
+void ACIDE_base_number_and_ratios(char *sequence)
 {
     int i;
     long long int A = 0,C = 0,T = 0,G = 0;

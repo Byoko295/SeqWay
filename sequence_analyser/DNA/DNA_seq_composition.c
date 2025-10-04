@@ -21,6 +21,7 @@ void DNA_base_number_and_ratios(char *sequence)
             G++;
         i++;
     }
+    printf("\n--------------DNA Base Content ---------------\n");
     printf("A : %lli  \nC : %lli   \nT : %lli \nG : %lli \n",A,C,T,G);
     if(ft_strlen(sequence) != 0)
     {
@@ -29,7 +30,9 @@ void DNA_base_number_and_ratios(char *sequence)
     ratio[2] = (double long) T  / len * 100.0;
     ratio[3] = (double long) C  / len * 100.0;
     }
-    printf("--------------------------------------\nPercentages\n");
+    printf("------------------DNA Base Ratios----------------\n");
     printf("A : %.2Lf %% \nC : %.2Lf %%  \nT : %.2Lf %%\nG : %.2Lf %%\n",ratio[0],ratio[1],ratio[2],ratio[3]);
+    printf("-------------------------------------------------\n");
 }
+
 

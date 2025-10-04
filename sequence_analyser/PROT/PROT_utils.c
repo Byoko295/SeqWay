@@ -11,6 +11,7 @@
 **README :
         Checks that the base is either A C T or G
 */
+
 bool ACIDE_is_base(char base)
 {
     if(base == 'A'|| base == 'C'|| base == 'T'|| base == 'G')
@@ -29,7 +30,7 @@ bool ACIDE_is_base(char base)
 **README :
             Checks that the DNA only contains ACTG
 */
-void PROT_sequence_checker(char *sequence)
+void ACIDE_sequence_checker(char *sequence)
 {
     int i;
     long long seq_len;

@@ -24,5 +24,6 @@ void    print_ll_array(long long *f_array)
         printf("%lli-",f_array[i]);
         i++;
     }
+    printf("\n");
 }
 

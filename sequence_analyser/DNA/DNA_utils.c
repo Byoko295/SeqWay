@@ -17,7 +17,6 @@ bool DNA_is_base(char base)
             return(1);
         return(0);
 }
-
 /* DNA_sequence_checker
 
 * Checksif the Input DNA iscorrectly formated ACTG only
@@ -40,7 +39,7 @@ void DNA_sequence_checker(char *sequence)
     {
         if (!DNA_is_base(sequence[i]))
             {   
-                printf("Sequence Failure : unrecognised base");
+                printf("DNA Sequence Failure : unrecognised base");
                 exit(1);
             }
             i++;

@@ -137,7 +137,10 @@ long long strict_highest_GC_ratio(char *sequence)
                         i++;
                 }
                 if (ratio > prev_ratio)
+                {
+                        prev_ratio = ratio;
                         highest_pos = curr_pos;
+                }
                 curr_pos++;
         }
         printf("\n Strict Highest GC ratio location is %lli \n",highest_pos);

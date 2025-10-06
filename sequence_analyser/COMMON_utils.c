@@ -132,10 +132,11 @@ long long strict_highest_GC_ratio(char *sequence)
                 ratio = 0;
                 while(i < window)
                 {
-                        if(sequence[i] == 'G' || sequence[i] == 'C')
+                        if(sequence[curr_pos + i] == 'G' || sequence[curr_pos + i] == 'C')
                                 ratio++;
                         i++;
                 }
+                //printf("ratio at index %lli is %lli \n",curr_pos,ratio);
                 if (ratio > prev_ratio)
                 {
                         prev_ratio = ratio;

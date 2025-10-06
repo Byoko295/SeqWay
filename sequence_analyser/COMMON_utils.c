@@ -116,21 +116,21 @@ void search_for_sequence_A(char *parent)
 long long strict_highest_GC_ratio(char *sequence)
 {
         long long i,highest_pos = -1,prev_ratio = 0, ratio = 0, curr_pos = 0;
-        long long *window = NULL;
+        long long window = 0;
 
         printf("Insert the  Window Value\n");
         scanf("%lli", window);
 
-        if (*window > (long long int)strlen(sequence))
+        if (window > (long long int)strlen(sequence) || !window)
         {
-                printf("\nWindow is larger then sequence\n");
+                printf("\nWindow is larger then sequence or NULL \n");
                 return(0);
         }
-        while(curr_pos <= (long long int)strlen(sequence) - *window)
+        while(curr_pos <= (long long int)strlen(sequence) - window)
         {
                 i = 0;
                 ratio = 0;
-                while(i < *window)
+                while(i < window)
                 {
                         if(sequence[i] == 'G' || sequence[i] == 'C')
                                 ratio++;

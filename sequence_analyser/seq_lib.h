@@ -24,12 +24,12 @@ long long int ft_strlen(char *sequence);
 void search_for_sequence_A(char *parent);
 void search_for_sequence_A_all(char *parent);
 void print_ll_array(long long *f_array);
-void GC_method(char *sequence);long long GC_ratio(char *sequence, long long window);
+long long strict_highest_GC_ratio(char *sequence);
 /* SPECIFIC MENUS*/
 void DNA_menu(char *sequence);
 void RNA_menu(char *sequence);
 void ACIDE_menu(char *sequence);
 /*MAIN*/
 void main_menu(char *sequence);
-long long GC_method(char *sequence);
+
 #endif

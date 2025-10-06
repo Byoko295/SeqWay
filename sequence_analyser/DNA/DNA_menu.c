@@ -18,7 +18,7 @@ void DNA_menu(char *sequence)
         DNA_base_number_and_ratios(sequence);
         break;
     case 1:
-        GC_method(sequence);
+        strict_highest_GC_ratio(sequence);
         break;
     case 2:
         search_for_sequence_A(sequence);

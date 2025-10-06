@@ -113,29 +113,33 @@ void search_for_sequence_A(char *parent)
         Make a version that prints an array of GC values from each index giving a window N 
         
 */
-long long strict_highest_GC_ratio(char *sequence, long long window)
+long long strict_highest_GC_ratio(char *sequence)
 {
-        long long i,highest_pos = -1,prev_ratio = 0, ratio = 0, highest_GC = 0, curr_pos = 0;
+        long long i,highest_pos = -1,prev_ratio = 0, ratio = 0, curr_pos = 0;
+        long long *window = NULL;
 
-        ACT
-        while()
+        printf("Insert the  Window Value\n");
+        scanf("%lli", window);
+
+        if (*window > (long long int)strlen(sequence))
+        {
+                printf("\nWindow is larger then sequence\n");
+                return(0);
+        }
+        while(curr_pos <= (long long int)strlen(sequence) - *window)
         {
                 i = 0;
                 ratio = 0;
-                while(i < window)
+                while(i < *window)
                 {
                         if(sequence[i] == 'G' || sequence[i] == 'C')
-                        {
                                 ratio++;
-                        }
                         i++;
                 }
-
-
-
-
                 if (ratio > prev_ratio)
-                        prev_ratio = ratio;
+                        highest_pos = curr_pos;
                 curr_pos++;
         }
+        printf("\n Strict Highest GC ratio location is %lli \n",highest_pos);
+        return(highest_pos);
 }

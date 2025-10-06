@@ -119,7 +119,7 @@ long long strict_highest_GC_ratio(char *sequence)
         long long window = 0;
 
         printf("Insert the  Window Value\n");
-        scanf("%lli", window);
+        scanf("%lli", &window);
 
         if (window > (long long int)strlen(sequence) || !window)
         {

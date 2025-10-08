@@ -33,6 +33,6 @@ void DNA_to_RNA_converter_main(char *DNA_sequence)
             stored_RNA_of_main_DNA_chain[i] =  get_complementary_RNA_base(DNA_sequence[i]);
         i++;
     }
-    printf("The complementary RNA chain of Sequence is : %s \n", stored_RNA_of_main_DNA_chain);
+    printf("The RNA chain of main Sequence is : %s \n", stored_RNA_of_main_DNA_chain);
     stored_RNA_of_main_DNA_chain[i] = '\0';
 }

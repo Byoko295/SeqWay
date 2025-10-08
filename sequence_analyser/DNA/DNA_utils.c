@@ -17,6 +17,7 @@ bool DNA_is_base(char base)
             return(1);
         return(0);
 }
+
 /* DNA_sequence_checker
 
 * Checksif the Input DNA iscorrectly formated ACTG only
@@ -45,7 +46,19 @@ void DNA_sequence_checker(char *sequence)
             i++;
     }
 }
-    
+
+/* get_complementary_DNA_base
+
+* Returns the complementary DNA base
+
+*input : DNA BASE (char)
+
+*output : complementary DNA Base (char)
+
+**README :
+            ADD unrecognised bases and IUPAC Values 
+*/
+
 char get_complementary_DNA_base(char base)
 {
     switch (base)

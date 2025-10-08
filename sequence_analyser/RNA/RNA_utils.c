@@ -46,7 +46,17 @@ void RNA_sequence_checker(char *sequence)
             i++;
     }
 }
+/* get_complementary_RNA_base
 
+* Returns the complementary RNA base
+
+*input : RNA BASE (char)
+
+*output : complementary RNA Base (char)
+
+**README :
+            ADD unrecognised bases and IUPAC Values if exists for RNA
+*/
 char get_complementary_RNA_base(char base)
 {
     switch (base)
@@ -66,7 +76,6 @@ char get_complementary_RNA_base(char base)
     default:
         return('N');
         break;
-    }
-    
+    } 
 }
     

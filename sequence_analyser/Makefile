@@ -6,6 +6,7 @@ SRC = main.c\
 		displayers.c\
 		COMMON_utils.c\
 		DNA/DNA_menu.c\
+		DNA/DNA_complementary_chain.c\
 		DNA/DNA_seq_composition.c\
 		DNA/DNA_utils.c\
 		RNA/RNA_seq_composition.c\

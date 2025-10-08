@@ -3,14 +3,7 @@
 /*Global variable used to store Translated DNA to RNA for future USE*/
 char *stored_RNA_of_complementary_DNA_chain = NULL;
 
-
-int RNA_specific_char(char *base)
-{
-    if (base == 'A' || base == 'C' || base == 'G')
-        return (1);
-    else if (base == 'T')
-        return (0);
-}
+/* RNA_converte_of_sequence_complementary_chain*/
 
 void RNA_converte_of_sequence_complementary_chain(char *DNA_sequence)
 {

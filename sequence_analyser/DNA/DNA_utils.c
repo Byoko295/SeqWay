@@ -46,3 +46,24 @@ void DNA_sequence_checker(char *sequence)
     }
 }
     
+char get_complementary_DNA_base(char base)
+{
+    switch (base)
+    {
+    case 'A':
+        return('T');
+        break;
+    case 'T':
+        return('A');
+        break;
+    case 'C':
+        return('G');
+        break;
+    case 'G':
+        return('C');
+        break;
+    default:
+        return('N');
+        break;
+    }
+}

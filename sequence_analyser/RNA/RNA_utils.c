@@ -46,4 +46,27 @@ void RNA_sequence_checker(char *sequence)
             i++;
     }
 }
+
+char get_complementary_RNA_base(char base)
+{
+    switch (base)
+    {
+    case 'A':
+        return('U');
+        break;
+    case 'U':
+        return('A');
+        break;
+    case 'C':
+        return('G');
+        break;
+    case 'G':
+        return('C');
+        break;
+    default:
+        return('N');
+        break;
+    }
+    
+}
     

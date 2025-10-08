@@ -6,8 +6,6 @@ void main_menu(char *sequence)
 
     printf("Selection :\n");
     printf("1 : DNA \n");
-    printf("2 : RNA \n");
-    printf("3 : PROT \n");
     scanf("%d", &selection);
     switch (selection)
 {
@@ -15,14 +13,8 @@ void main_menu(char *sequence)
         DNA_sequence_checker(sequence);
         DNA_menu(sequence);
         break;
-    case 2:
-        RNA_sequence_checker(sequence);
-        break;
-    case 3:
-        ACIDE_sequence_checker(sequence);
-        break;    
     default:
-        printf("Please enter a valid value \n");
-}
+        printf("Not an option.\n");
+} 
 
 }

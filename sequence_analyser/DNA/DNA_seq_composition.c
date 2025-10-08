@@ -1,5 +1,8 @@
 #include "../seq_lib.h"
 
+/* DNA_base_number_and_ratios
+    
+*/
 void DNA_base_number_and_ratios(char *sequence)
 {
     int i;

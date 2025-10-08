@@ -3,6 +3,19 @@
 /*Global variable used to store complementary DNA chain for future USE*/
 char *stored_complementary_DNA_chain = NULL;
 
+
+/* DNA_complementary_chain
+
+* Returns the complementary DNA chain
+
+*input : DNA Sequence (char *)
+
+*output : complementary DNA Sequence (char *)
+
+**README :
+            ADD unrecognised bases and IUPAC Values
+*/
+
 void DNA_complementary_chain(char *DNA_sequence)
 {
     long long int len,i = 0;

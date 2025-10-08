@@ -7,11 +7,13 @@ void DNA_menu(char *sequence)
     printf("Selection :\n");
     printf("0 : Print DNA Composition \n");
     printf("1 : Print DNA complementary chain\n");
-    printf("2 : GC Ratio Within N window\n");
-    printf("3 : Find first occurence of target sequence \n");
-    printf("4 : Find all occurences of target sequence\n");
-    printf("5 : Find first occurence of target sequence with Humming Method \n");
-    printf("6 : Find all occurences of target sequence with Humming Method \n");
+    printf("2 : Print RNA of Main chain \n");
+    printf("3 : Print RNA of complementary chain\n");
+    printf("4 : GC Raio Within N window\n");
+    printf("5 : Find first occurence of target sequence \n");
+    printf("6 : Find all occurences of target sequence\n");
+    printf("7 : Find first occurence of target sequence with Humming Method \n");
+    printf("8 : Find all occurences of target sequence with Humming Method \n");
     scanf("%d", &selection);
     switch (selection)
     {
@@ -22,15 +24,21 @@ void DNA_menu(char *sequence)
         DNA_complementary_chain(sequence);
         break;
     case 2:
-        strict_highest_GC_ratio(sequence);
+        DNA_to_RNA_converter_main(sequence);
         break;
     case 3:
-        search_for_sequence_A(sequence);
+        DNA_to_RNA_complementary(sequence);
         break;
     case 4:
-        search_for_sequence_A_all(sequence);
+        strict_highest_GC_ratio(sequence);
         break;
     case 5:
+        search_for_sequence_A(sequence);
+        break;
+    case 6:
+        search_for_sequence_A_all(sequence);
+        break;
+    case 7:
         search_for_sequence_A_all(sequence);
         break;
     default:

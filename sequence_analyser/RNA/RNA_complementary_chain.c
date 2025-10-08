@@ -3,9 +3,19 @@
 /*Global variable used to store Translated DNA to RNA for future USE*/
 char *stored_RNA_of_complementary_DNA_chain = NULL;
 
-/* RNA_converte_of_sequence_complementary_chain*/
+/* RNA_converte_of_sequence_complementary_chain
 
-void RNA_converte_of_sequence_complementary_chain(char *DNA_sequence)
+* Stores the RNA converted sequence of the complementary DNA chain
+
+*input : DNA Sequence (char *)
+
+*output : RNA Sequence (char *)
+
+**README :
+            ADD unrecognised bases and IUPAC Values if exists for RNA
+*/
+
+void DNA_to_RNA_complementary(char *DNA_sequence)
 {
     long long int len,i = 0;
 

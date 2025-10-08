@@ -10,6 +10,8 @@
 /*DNA */
 char get_complementary_DNA_base(char base);
 void DNA_complementary_chain(char *sequence);
+void  DNA_to_RNA_converter_main(char *sequence);
+void  DNA_to_RNA_complementary(char *sequence);
 /* PARSING SEQUENCES FOR ERRORS*/
 void DNA_sequence_checker(char *sequence);
 void RNA_sequence_checker(char *sequence);

@@ -9,7 +9,7 @@
 *output : 1 if ACTG / 0 if else
 
 **README :
-        Checks that the base is either A C T or G
+    Adds check for IUPAC values
 */
 bool DNA_is_base(char base)
 {
@@ -27,8 +27,9 @@ bool DNA_is_base(char base)
 *output : exits if other then ACTG in parent sequence
 
 **README :
-            Checks that the DNA only contains ACTG
+            Checks that the DNA only contains whqt is considered valid bases (ACTG, N And IUPAC values if added)
 */
+
 void DNA_sequence_checker(char *sequence)
 {
     int i;
@@ -56,7 +57,7 @@ void DNA_sequence_checker(char *sequence)
 *output : complementary DNA Base (char)
 
 **README :
-            ADD unrecognised bases and IUPAC Values 
+            ADD  IUPAC Values 
 */
 
 char get_complementary_DNA_base(char base)

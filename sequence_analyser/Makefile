@@ -11,6 +11,8 @@ SRC = main.c\
 		DNA/DNA_utils.c\
 		RNA/RNA_seq_composition.c\
 		RNA/RNA_utils.c\
+		RNA/RNA_main_chain_converter.c\
+		RNA/RNA_complementary_chain_converter.c\
 		PROT/PROT_seq_composition.c\
 		PROT/PROT_utils.c\
 

@@ -1,4 +1,4 @@
-#include "seq_lib.h"
+#include "../seq_lib.h"
 
 /*Global variable used to store Translated DNA to RNA for future USE*/
 char *stored_RNA_of_complementary_DNA_chain = NULL;
@@ -26,7 +26,7 @@ void DNA_to_RNA_complementary(char *DNA_sequence)
     if (!stored_RNA_of_complementary_DNA_chain)
     {
         perror("Failed to allocate memory for stored_RNA_of_complementary_chain \n");
-        exite(1);
+        exit(1);
     }
     while(i < len)
     {
@@ -36,5 +36,5 @@ void DNA_to_RNA_complementary(char *DNA_sequence)
             stored_RNA_of_complementary_DNA_chain[i] = 'U';
         i++;
     }
-    stored_RNA_of_complementary_DNA_chain[i] = '/0';
+    stored_RNA_of_complementary_DNA_chain[i] = '\0';
 }

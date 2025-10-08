@@ -7,6 +7,8 @@
 #include <stdbool.h>
 #include <string.h>
 
+/*RNA*/
+char get_complementary_RNA_base(char base);
 /*DNA */
 char get_complementary_DNA_base(char base);
 void DNA_complementary_chain(char *sequence);

@@ -144,6 +144,9 @@ long long strict_highest_GC_ratio(char *sequence)
                 }
                 curr_pos++;
         }
-        printf("\n Strict Highest GC ratio location is %lli \n",highest_pos);
+        if (highest_pos != -1)
+                printf("The highest GC ratio within a window of %lli is at index %lli with a GC count of %lli \n",window,highest_pos,prev_ratio);
+        else
+                printf("No GC content found within a window of %lli \n",window);
         return(highest_pos);
 }

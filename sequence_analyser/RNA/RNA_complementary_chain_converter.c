@@ -30,10 +30,10 @@ void DNA_to_RNA_complementary(char *DNA_sequence)
     }
     while(i < len)
     {
-        if (DNA_sequence[i])
-            stored_RNA_of_complementary_DNA_chain[i] = DNA_sequence[i];
-        else
+        if (DNA_sequence[i] == 'T')
             stored_RNA_of_complementary_DNA_chain[i] = 'U';
+        else if (DNA_is_base(DNA_sequence[i]))  
+            stored_RNA_of_complementary_DNA_chain[i] = DNA_sequence[i];
         i++;
     }
     printf("The complementary RNA chain of Sequence is : %s \n", stored_RNA_of_complementary_DNA_chain);

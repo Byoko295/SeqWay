@@ -36,5 +36,6 @@ void DNA_to_RNA_complementary(char *DNA_sequence)
             stored_RNA_of_complementary_DNA_chain[i] = 'U';
         i++;
     }
+    printf("The complementary RNA chain of Sequence is : %s \n", stored_RNA_of_complementary_DNA_chain);
     stored_RNA_of_complementary_DNA_chain[i] = '\0';
 }
